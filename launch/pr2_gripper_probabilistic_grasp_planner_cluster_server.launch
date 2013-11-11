@@ -1,0 +1,24 @@
+<launch>
+
+  <node name="pr2_gripper_probabilistic_grasp_planner_cluster" pkg="uw_pr2_gripper_grasp_planner_cluster" 
+    type="probabilistic_point_cluster_grasp_planner_server.py" respawn="false" output="screen">
+    <rosparam command="load" file="$(find uw_pr2_gripper_grasp_planner_cluster)/config/pr2_gripper_model.yaml" />
+  <param name="z_up_frame" value="base_link"/>
+	<param name="backoff_depth_steps" value="8"/>
+  </node>  
+
+  <!-- only need this when used stanalone -->
+  <!--
+  <include file="$(find tabletop_octomap)/launch/base_link_static_tf.launch"/>
+  -->
+
+<!--
+  <node name="joint_states_listener" pkg="joint_states_listener" 
+    type="joint_states_listener.py" respawn="true" output="screen">
+  </node>
+-->
+  <!-- Broadcast a static tf frame for the pretouch sensor frame 
+  <include file="$(find tabletop_octomap)/launch/pretouch_frame_static_tf.launch"/>
+  -->
+
+</launch>

@@ -1,0 +1,3 @@
+uw_pr2_gripper_grasp_planner_cluster
+
+A self-contained catkinized pr2_gripper_grasp_planner_cluster package in the old pr2_object_manipulation stack used at UW for grasping unknown object. Also contains Python utility modules in the old object_manipulator package.

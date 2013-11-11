@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<package>
+  <name>uw_pr2_gripper_grasp_planner_cluster</name>
+  <version>0.1.0</version>
+  <description>The uw_pr2_gripper_grasp_planner_cluster package</description>
+
+  <maintainer email="jianglt@uw.edu">Liang-Ting Jiang</maintainer>
+  <author email="jianglt@uw.edu">Liang-Ting Jiang</author> -->
+
+  <license>BSD</license>\
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>visualization_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>moveit_ros_planning_interface</build_depend>
+  <build_depend>moveit_commander</build_depend>
+  <build_depend>moveit_msgs</build_depend>
+  <build_depend>shape_msgs</build_depend>
+  <build_depend>trajectory_msgs</build_depend>
+  <build_depend>pr2_controllers_msgs</build_depend>
+
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>tf</run_depend>
+  <run_depend>visualization_msgs</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>moveit_ros_planning_interface</run_depend>
+  <run_depend>moveit_commander</run_depend>
+  <run_depend>moveit_msgs</run_depend>
+  <run_depend>shape_msgs</run_depend>
+  <run_depend>trajectory_msgs</run_depend>
+  <run_depend>pr2_controllers_msgs</run_depend>
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+
+  </export>
+</package>
